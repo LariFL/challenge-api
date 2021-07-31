@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+client:
+  url:
+    cpf-validator: https://user-info.herokuapp.com/
+      
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:h2:file:~/challenge
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+  jackson:
+    serialization:
+      fail-on-empty-beans: false    
+      
+swagger:
+  base-package: com.example.demo
+  title: Challenge API REST
+  description: Service documentation
+  version: 1.0
+  terms: Terms of Service
+  develloper-name: Larissa Lacerda
+  develloper-email: larifl13@gmail.com
+  licence: Apache License Version 2.0
+  licence-url: https://www.apache.org/licesen.html
