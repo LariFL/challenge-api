@@ -15,12 +15,13 @@ public class AgendaDeleteService {
 	public boolean execute(Long id) {
 		
 		if(id == null)
-			throw new ApiException("Necessário informar o id a ser deletado");
+			throw new ApiException("It's necessary to inform the id to be delete.");
 		
-		if(agendaRepository.findAgenda(id) == null)
-			return false;
+		if(agendaRepository.existsById(id)) {
+			agendaRepository.deleteById(id);		
+			return true;
+		}
 		
-		agendaRepository.deleteById(id);		
-		return true;
+		return false;
 	}
 }

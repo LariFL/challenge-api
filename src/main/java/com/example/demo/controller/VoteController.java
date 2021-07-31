@@ -21,7 +21,7 @@ import com.example.demo.service.VoteResultService;
 import com.example.demo.service.VoteSaveService;
 
 @Controller
-@RequestMapping("/vote")
+@RequestMapping("/v1/vote")
 public class VoteController {
 	
 	@Autowired

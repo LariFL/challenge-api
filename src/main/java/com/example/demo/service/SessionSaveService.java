@@ -20,6 +20,7 @@ public class SessionSaveService {
 	private AgendaRepository agendaRepository;
 	
 	public void execute(Session session) {
+		
 		validatesBusinessRules(session);
 		
 		if(session.getOpeningTime() <= 0)
@@ -31,12 +32,15 @@ public class SessionSaveService {
 	}
 	
 	private void validatesBusinessRules(Session session) {
-
-		if(!agendaRepository.findById(session.getAgenda().getId()).isPresent())
-			throw new ApiException("Pauta não encontrada");
 		
-		if(sessionRepository.findByOpenAgendaSession(session.getAgenda().getId()).size() > 0)
-			throw new ApiException("Já existe uma sessão em aberto para pauta informada.");
+		if(session.getAgenda() == null || (session.getAgenda() != null && session.getAgenda().getId() == null))
+			throw new ApiException("Agenda information is required.");
+
+		if(agendaRepository.findAgenda(session.getAgenda().getId()) == null)
+			throw new ApiException("Agenda not found.");
+		
+		if(sessionRepository.findByOpenAgendaSession(session.getAgenda().getId()) != null)
+			throw new ApiException("There's already an open session for the informed agenda.");
 			
 	}
 

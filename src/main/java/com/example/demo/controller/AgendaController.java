@@ -21,8 +21,8 @@ import com.example.demo.service.AgendaSaveService;
 import io.swagger.annotations.Api;
 
 @Controller
-@RequestMapping("/agenda")
-@Api(value = "API Agenda")
+@RequestMapping("/v1/agenda")
+@Api(value = "Agenda API")
 public class AgendaController {
 	
 	@Autowired

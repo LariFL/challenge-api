@@ -1,7 +1,5 @@
 package com.example.demo.repository;
 
-import java.util.List;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
@@ -11,10 +9,10 @@ import com.example.demo.model.VoteResult;
 public interface VoteRepository extends JpaRepository<Vote, Long> {
 
 	@Query("SELECT v FROM Vote v WHERE ID_SESSION = ?1 AND cpfAssociate = ?2 ")
-	List<Vote> findByAssociateAccountedVote(Long id_session, String cpfAssociate);
+	Vote findByAssociateAccountedVote(Long id_session, String cpfAssociate);
 	
 	@Query(value= "SELECT NEW com.example.demo.model.VoteResult(s, "
-				+ "SUM(CASE WHEN ANSWER = 'S' THEN 1 ELSE 0 END) AS countAnswerYes, "
+				+ "SUM(CASE WHEN ANSWER = 'Y' THEN 1 ELSE 0 END) AS countAnswerYes, "
 				+ "SUM(CASE WHEN ANSWER = 'N' THEN 1 ELSE 0 END) AS countAnswerNo) "
 				+ "FROM Vote v "
 				+ "INNER JOIN v.session s "

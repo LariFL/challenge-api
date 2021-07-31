@@ -15,12 +15,13 @@ public class SessionDeleteService {
 	public boolean execute(Long id) {
 		
 		if(id == null)
-			throw new ApiException("Necessário informar o id a ser deletado");
+			throw new ApiException("It's necessary to inform the id to be delete.");
+				
+		if(sessionRepository.existsById(id)) {
+			sessionRepository.deleteById(id);		
+			return true;
+		}
 		
-		if(sessionRepository.findSession(id) == null)
-			return false;
-		
-		sessionRepository.deleteById(id);		
-		return true;
+		return false;
 	}
 }

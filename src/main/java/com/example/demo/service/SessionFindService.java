@@ -16,7 +16,7 @@ public class SessionFindService {
 	public Session execute(Long id) {
 		
 		if(id == null)
-			throw new ApiException("Necessário informar o id a ser pesquisado");
+			throw new ApiException("It's necessary to inform the id to be searched.");
 
 		return sessionRepository.findSession(id);
 	}

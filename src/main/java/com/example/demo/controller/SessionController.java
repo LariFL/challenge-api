@@ -18,8 +18,11 @@ import com.example.demo.service.SessionFindService;
 import com.example.demo.service.SessionGetService;
 import com.example.demo.service.SessionSaveService;
 
+import io.swagger.annotations.Api;
+
 @Controller
-@RequestMapping("/session")
+@RequestMapping("/v1/session")
+@Api(value = "Session API")
 public class SessionController {
 	
 	@Autowired

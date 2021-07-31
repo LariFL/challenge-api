@@ -20,7 +20,7 @@ public class AgendaSaveService {
 	
 	private void validatesBusinessRules(Agenda agenda) {
 		if(agenda.getName() == null)
-			throw new ApiException("Campo 'name' é obrigatório");
+			throw new ApiException("Name information is required.");
 	}
 
 }
