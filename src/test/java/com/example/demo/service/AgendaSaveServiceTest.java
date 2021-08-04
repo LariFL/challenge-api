@@ -1,10 +1,8 @@
-package com.example.demo.controller;
+package com.example.demo.service;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
-
-import java.util.Random;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +13,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 import com.example.demo.core.exception.ApiException;
 import com.example.demo.model.Agenda;
 import com.example.demo.repository.AgendaRepository;
-import com.example.demo.service.AgendaSaveService;
+import com.example.demo.request.AgendaRequest;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AgendaSaveServiceTest {
@@ -29,29 +27,35 @@ public class AgendaSaveServiceTest {
 	@Test
 	public void mustSaveAgenda() {
 		
-		Agenda agenda = getSuccessAgenda();
-		service.execute(agenda);
-
+		service.execute(getSuccessAgendaRequest());
 		verify(repository).save(any(Agenda.class));
 	}
 	
 	@Test(expected = ApiException.class)
-	public void errorShouldOccurWhenSaveAgendaNoName(){	
+	public void errorShouldOccurWhenSaveAgendaWithNullName(){	
 		
-		Agenda agenda = getSuccessAgenda();
-		agenda.setName(null);
+		AgendaRequest agendaRequest = getSuccessAgendaRequest();
+		agendaRequest.setName(null);
 
-		service.execute(agenda);
-
+		service.execute(agendaRequest);
 		verify(repository, never()).save(any(Agenda.class));
 	}
 	
-	private static Agenda getSuccessAgenda() {
-		return Agenda
+	@Test(expected = ApiException.class)
+	public void errorShouldOccurWhenSaveAgendaWithEmptyName(){	
+		
+		AgendaRequest agendaRequest = getSuccessAgendaRequest();
+		agendaRequest.setName("");
+
+		service.execute(agendaRequest);
+		verify(repository, never()).save(any(Agenda.class));
+	}
+	
+	private static AgendaRequest getSuccessAgendaRequest() {
+		return AgendaRequest
 				.builder()
-				.id(new Random().nextLong())
-				.name("Test agenda name")
-				.description("Test agenda description")
+				.name("Agenda test name")
+				.description("Agenda test description")
 				.build();
 	}
 }

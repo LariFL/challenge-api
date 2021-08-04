@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.service;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.never;

@@ -24,7 +24,7 @@ public class Session {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;	
-	private int openingTime;
+	private int openingTimeInMinutes;
 	private LocalDateTime dateEndTime;
 	
 	@OneToOne

@@ -12,6 +12,8 @@ import com.example.demo.model.Vote;
 import com.example.demo.repository.SessionRepository;
 import com.example.demo.repository.VoteRepository;
 
+import feign.FeignException;
+
 @Service
 public class VoteSaveService {
 
@@ -58,7 +60,7 @@ public class VoteSaveService {
 		try {
 			if(cpfClient.getCpf(vote.getCpfAssociate()).getStatus().equals(MEMBER_CANNOT_VOTE))
 				throw new ApiException("Member cannot vote.");
-		} catch (Exception e) {
+		} catch (FeignException e) {
 			throw new ApiException("Member's CPF is invalid.");
 		}
 		

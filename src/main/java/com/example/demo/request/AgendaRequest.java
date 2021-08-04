@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.demo.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class VoteResult {
+public class AgendaRequest {
 
-	private Session session;
-	private Long countAnswerYes;
-	private Long countAnswerNo;
+	private String name;
+	private String description;
 	
 }

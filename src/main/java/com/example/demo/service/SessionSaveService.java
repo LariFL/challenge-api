@@ -23,20 +23,20 @@ public class SessionSaveService {
 		
 		validatesBusinessRules(session);
 		
-		if(session.getOpeningTime() <= 0)
-			session.setOpeningTime(1);
+		if(session.getOpeningTimeInMinutes() <= 0)
+			session.setOpeningTimeInMinutes(1);
 		
-		session.setDateEndTime(LocalDateTime.now().plusMinutes(session.getOpeningTime()));
+		session.setDateEndTime(LocalDateTime.now().plusMinutes(session.getOpeningTimeInMinutes()));
 		
 		sessionRepository.save(session);
 	}
 	
 	private void validatesBusinessRules(Session session) {
 		
-		if(session.getAgenda() == null || (session.getAgenda() != null && session.getAgenda().getId() == null))
+		if(session.getAgenda() == null || session.getAgenda().getId() == null)
 			throw new ApiException("Agenda information is required.");
 
-		if(agendaRepository.findAgenda(session.getAgenda().getId()) == null)
+		if(!agendaRepository.existsById(session.getAgenda().getId()))			
 			throw new ApiException("Agenda not found.");
 		
 		if(sessionRepository.findByOpenAgendaSession(session.getAgenda().getId()) != null)

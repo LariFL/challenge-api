@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.service;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.never;
@@ -18,7 +18,6 @@ import com.example.demo.model.Agenda;
 import com.example.demo.model.Session;
 import com.example.demo.repository.AgendaRepository;
 import com.example.demo.repository.SessionRepository;
-import com.example.demo.service.SessionSaveService;
 
 @RunWith(MockitoJUnitRunner.class)
 public class SessionSaveServiceTest {
@@ -87,7 +86,7 @@ public class SessionSaveServiceTest {
 		return Session
 				.builder()
 				.id(ID_RANDOM)
-				.openingTime(1)
+				.openingTimeInMinutes(1)
 				.agenda(Agenda.builder().id(ID_RANDOM).build())
 				.build();
 	}

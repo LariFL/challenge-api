@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 
 import com.example.demo.core.exception.ApiException;
 import com.example.demo.model.Session;
-import com.example.demo.model.VoteResult;
 import com.example.demo.repository.SessionRepository;
 import com.example.demo.repository.VoteRepository;
+import com.example.demo.response.VoteResponse;
 
 @Service
-public class VoteResultService {
+public class VoteResponseService {
 
 	@Autowired
 	private VoteRepository voteRepository;
@@ -20,7 +20,7 @@ public class VoteResultService {
 	@Autowired
 	private SessionRepository sessionRepository;
 
-	public VoteResult execute(Long id) {
+	public VoteResponse execute(Long id) {
 		
 		validatesBusinessRules(id);
 		return voteRepository.calcVoteResult(id);

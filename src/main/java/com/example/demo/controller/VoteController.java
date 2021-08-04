@@ -7,21 +7,24 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.example.demo.model.Vote;
-import com.example.demo.model.VoteResult;
+import com.example.demo.response.VoteResponse;
 import com.example.demo.service.VoteGetService;
-import com.example.demo.service.VoteResultService;
+import com.example.demo.service.VoteResponseService;
 import com.example.demo.service.VoteSaveService;
+
+import io.swagger.annotations.Api;
 
 @Controller
 @RequestMapping("/v1/vote")
+@Api(value = "Vote API")
 public class VoteController {
 	
 	@Autowired
@@ -31,7 +34,7 @@ public class VoteController {
 	private VoteSaveService voteSaveService;
 	
 	@Autowired
-	private VoteResultService voteResultService;
+	private VoteResponseService voteResponseService;
 	
 	@GetMapping(value="/get")
 	public ResponseEntity<List<Vote>> get() {
@@ -40,7 +43,7 @@ public class VoteController {
 		return ResponseEntity.ok(lista);
 	}
 	
-	@RequestMapping(value="/save", method = RequestMethod.POST)
+	@PostMapping(value="/save")
 	public ResponseEntity<Vote> save(
 			@RequestBody Vote vote) {
 		
@@ -51,10 +54,10 @@ public class VoteController {
 	@GetMapping(value="/result")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
-	public VoteResult result(
+	public VoteResponse result(
 			@RequestParam(required=false) Long id) {
 		
-		VoteResult voteResult = voteResultService.execute(id);
+		VoteResponse voteResult = voteResponseService.execute(id);
 		return voteResult;
 	}
 }
