@@ -1,4 +1,4 @@
-package com.example.demo.core.exception;
+package com.example.demo.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ApiResponse {
+public class ChallengeResponse {
 
 	private String message;
 }

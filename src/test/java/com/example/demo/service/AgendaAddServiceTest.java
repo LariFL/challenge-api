@@ -10,7 +10,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.example.demo.core.exception.ApiException;
+import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Agenda;
 import com.example.demo.repository.AgendaRepository;
 import com.example.demo.request.AgendaRequest;
@@ -30,7 +30,7 @@ public class AgendaAddServiceTest {
 		verify(repository).save(any(Agenda.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenAddAgendaWithNullName() {		
 		AgendaRequest agendaRequest = getSuccessAgendaRequest();
 		agendaRequest.setName(null);
@@ -39,7 +39,7 @@ public class AgendaAddServiceTest {
 		verify(repository, never()).save(any(Agenda.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenAddAgendaWithEmptyName() {		
 		AgendaRequest agendaRequest = getSuccessAgendaRequest();
 		agendaRequest.setName("");

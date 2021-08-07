@@ -14,7 +14,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.example.demo.core.exception.ApiException;
+import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Agenda;
 import com.example.demo.model.Session;
 import com.example.demo.repository.AgendaRepository;
@@ -44,7 +44,7 @@ public class SessioOpenServiceTest {
 		verify(sessionRepository).save(any(Session.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenOpenSessionWithNullAgenda() {		
 		SessionRequest sessionRequest = getSuccessSessionRequest();
 		sessionRequest.setId_agenda(null);
@@ -53,13 +53,13 @@ public class SessioOpenServiceTest {
 		verify(sessionRepository, never()).save(any(Session.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenOpenSessionAndNotFoundAgenda() {			
 		service.execute(getSuccessSessionRequest());
 		verify(sessionRepository, never()).save(any(Session.class));
 	}
 
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenOpenSessionAndThereIsAlreadyAnOpenSession() {		
 		
 		when(agendaRepository.findAgenda(any(Long.class)))

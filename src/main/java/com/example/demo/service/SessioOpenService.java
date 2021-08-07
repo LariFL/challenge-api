@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.core.exception.ApiException;
+import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Agenda;
 import com.example.demo.model.Session;
 import com.example.demo.repository.AgendaRepository;
@@ -37,14 +37,14 @@ public class SessioOpenService {
 	
 	private void validatesBusinessRules(SessionRequest sessionRequest) {
 		if(sessionRequest.getId_agenda() == null)
-			throw new ApiException("Agenda information is required.");
+			throw new ChallengeException("Agenda information is required.");
 
 		agenda = agendaRepository.findAgenda(sessionRequest.getId_agenda());
 		if(agenda == null)
-			throw new ApiException("Agenda not found.");
+			throw new ChallengeException("Agenda not found.");
 		
 		if(sessionRepository.findByOpenAgendaSession(sessionRequest.getId_agenda()) != null)
-			throw new ApiException("There's already an open session for the informed agenda.");
+			throw new ChallengeException("There's already an open session for the informed agenda.");
 	}
 	
 	private Session createSession(SessionRequest sessionRequest) {

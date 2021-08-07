@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.client.CPFClient;
-import com.example.demo.core.exception.ApiException;
+import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Session;
 import com.example.demo.model.Vote;
 import com.example.demo.repository.SessionRepository;
@@ -51,13 +51,13 @@ public class VoteVotingService {
 	
 	private  void validateRequiredInformations(VoteRequest voteRequest) {
 		if(voteRequest.getId_session() == null)
-			throw new ApiException("Session information is required.");
+			throw new ChallengeException("Session information is required.");
 		
 		if(voteRequest.getAnswer() == null)
-			throw new ApiException("Answer information is required.");
+			throw new ChallengeException("Answer information is required.");
 		
 		if(voteRequest.getCpfAssociate() == null)
-			throw new ApiException("Associate's CPF information is required.");		
+			throw new ChallengeException("Associate's CPF information is required.");		
 	}
 	
 	private void putAnswerToUpperAndRemoveSpaces(VoteRequest voteRequest) {
@@ -67,29 +67,29 @@ public class VoteVotingService {
 	private void validateIfAnswerIsValid(VoteRequest voteRequest) {
 		putAnswerToUpperAndRemoveSpaces(voteRequest);
 		if(!(ANSWER_YES).equals(voteRequest.getAnswer()) && !(ANSWER_NO).equals(voteRequest.getAnswer()))
-			throw new ApiException("Invalid vote! Use 'Y' for yes or 'N' for no.");
+			throw new ChallengeException("Invalid vote! Use 'Y' for yes or 'N' for no.");
 	}
 	
 	private void validateIfExistsSessionOrIsClosed(VoteRequest voteRequest) {
 		session = sessionRepository.findSession(voteRequest.getId_session());
 		if(session == null)
-			throw new ApiException("Voting session not found.");
+			throw new ChallengeException("Voting session not found.");
 		
 		if(session.getDateEndTime().isBefore(LocalDateTime.now()))
-			throw new ApiException("Voting session closed.");		
+			throw new ChallengeException("Voting session closed.");		
 	}
 	
 	private void validateIfAssociateAlreadyVote(VoteRequest voteRequest) {
 		if(voteRepository.findByAssociateAccountedVote(voteRequest.getId_session(), voteRequest.getCpfAssociate()) != null)
-			throw new ApiException("Associate's vote already counted.");
+			throw new ChallengeException("Associate's vote already counted.");
 	}
 	
 	private void validateIfAssociateCannotVoteOrCPFIsInvalid(VoteRequest voteRequest) {
 		try {
 			if(cpfClient.getCpf(voteRequest.getCpfAssociate()).getStatus().equals(ASSOCIATE_CANNOT_VOTE))
-				throw new ApiException("Associate cannot vote.");
+				throw new ChallengeException("Associate cannot vote.");
 		} catch (FeignException e) {
-			throw new ApiException("Associate's CPF is invalid.");
+			throw new ChallengeException("Associate's CPF is invalid.");
 		}
 	}
 	

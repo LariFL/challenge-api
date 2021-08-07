@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.core.exception.ApiException;
+import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Session;
 import com.example.demo.repository.SessionRepository;
 import com.example.demo.repository.VoteRepository;
@@ -33,13 +33,13 @@ public class VoteResultService {
 	
 	private void validatesBusinessRules(Long id) {
 		if(id == null)
-			throw new ApiException("It's necessary to inform the id of the session to be counted.");
+			throw new ChallengeException("It's necessary to inform the id of the session to be counted.");
 		
 		session = sessionRepository.findSession(id);
 		if(session == null)
-			throw new ApiException("Voting session not found.");
+			throw new ChallengeException("Voting session not found.");
 		
 		if(session.getDateEndTime().isAfter(LocalDateTime.now()))
-			throw new ApiException("Voting session is still open.");
+			throw new ChallengeException("Voting session is still open.");
 	}
 }

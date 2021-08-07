@@ -3,7 +3,7 @@ package com.example.demo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.core.exception.ApiException;
+import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Agenda;
 import com.example.demo.repository.AgendaRepository;
 import com.example.demo.request.AgendaRequest;
@@ -25,10 +25,10 @@ public class AgendaAddService {
 	
 	private void validatesBusinessRules(AgendaRequest agendaRequest) {		
 		if(agendaRequest.getName() == null)
-			throw new ApiException("Name information is required.");		
+			throw new ChallengeException("Name information is required.");		
 		
 		if(agendaRequest.getName().trim().equals(""))
-			throw new ApiException("Name information cannot be empty.");		
+			throw new ChallengeException("Name information cannot be empty.");		
 	}
 	
 	private Agenda createAgenda(AgendaRequest agendaRequest) {

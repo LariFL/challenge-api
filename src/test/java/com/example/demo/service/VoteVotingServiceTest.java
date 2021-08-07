@@ -15,7 +15,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import com.example.demo.client.CPFClient;
-import com.example.demo.core.exception.ApiException;
+import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Agenda;
 import com.example.demo.model.Session;
 import com.example.demo.model.Vote;
@@ -55,7 +55,7 @@ public class VoteVotingServiceTest {
 		verify(voteRepository).save(any(Vote.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenVotingVoteWithNullSession() {	
 		VoteRequest voteRequest = getSuccessVoteRequest();
 		voteRequest.setId_session(null);
@@ -63,7 +63,7 @@ public class VoteVotingServiceTest {
 		verify(voteRepository, never()).save(any(Vote.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenVotingVoteWithNullAnswer() {	
 		VoteRequest voteRequest = getSuccessVoteRequest();
 		voteRequest.setAnswer(null);
@@ -71,7 +71,7 @@ public class VoteVotingServiceTest {
 		verify(voteRepository, never()).save(any(Vote.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenVotingVoteWithNullAssociateCPF() {	
 		VoteRequest voteRequest = getSuccessVoteRequest();
 		voteRequest.setCpfAssociate(null);
@@ -79,13 +79,13 @@ public class VoteVotingServiceTest {
 		verify(voteRepository, never()).save(any(Vote.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenVotingVoteAndSessionNotFound() {
 		service.execute(getSuccessVoteRequest());
 		verify(voteRepository, never()).save(any(Vote.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenVotingVoteAndSessionClose() {		
 		Session session = createSessionMock();
 		session.setDateEndTime(LocalDateTime.now().plusMinutes(-30));		
@@ -96,7 +96,7 @@ public class VoteVotingServiceTest {
 		verify(voteRepository, never()).save(any(Vote.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenVotingVoteWithInvalidAnswer() {	
 		VoteRequest voteRequest = getSuccessVoteRequest();
 		voteRequest.setAnswer("");
@@ -104,7 +104,7 @@ public class VoteVotingServiceTest {
 		verify(voteRepository, never()).save(any(Vote.class));
 	}
 
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenVotingVoteAndAssociateCannotVote() {	
 		
 		when(sessionRepository.findSession(any(Long.class)))
@@ -117,7 +117,7 @@ public class VoteVotingServiceTest {
 		verify(voteRepository, never()).save(any(Vote.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenVotingVoteAndAssociateAlreadyCounted() {			
 		when(sessionRepository.findSession(any(Long.class)))
 			.thenReturn(createSessionMock());

@@ -14,7 +14,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import com.example.demo.core.exception.ApiException;
+import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Agenda;
 import com.example.demo.model.Session;
 import com.example.demo.repository.SessionRepository;
@@ -43,19 +43,19 @@ public class VoteResultServiceTest {
 		verify(voteRepository).calcVoteResult(any(Long.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenCalcVoteResultWithNullIdSession() {	
 		service.execute(null);
 		verify(voteRepository, never()).calcVoteResult(any(Long.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenCalcVoteResultAndSessionNotFound() {	
 		service.execute(ID_RANDOM);
 		verify(voteRepository, never()).calcVoteResult(any(Long.class));
 	}
 	
-	@Test(expected = ApiException.class)
+	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenCalcVoteResultAndSessionIsStillOpen() {
 		Session session = createSessionMock();
 		session.setDateEndTime(LocalDateTime.now().plusMinutes(30));
