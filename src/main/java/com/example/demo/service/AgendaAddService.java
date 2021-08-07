@@ -8,6 +8,9 @@ import com.example.demo.model.Agenda;
 import com.example.demo.repository.AgendaRepository;
 import com.example.demo.request.AgendaRequest;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class AgendaAddService {
 
@@ -16,6 +19,7 @@ public class AgendaAddService {
 	
 	public Agenda execute(AgendaRequest agendaRequest) {		
 		validatesBusinessRules(agendaRequest);
+		log.info("Agenda created successfully.");
 		return agendaRepository.save(createAgenda(agendaRequest));
 	}
 	

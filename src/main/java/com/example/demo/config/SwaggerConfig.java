@@ -52,7 +52,6 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo metaInfo() {
-
 		return new ApiInfo(
 				title,
 				description,

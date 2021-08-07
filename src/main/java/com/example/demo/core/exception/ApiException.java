@@ -1,5 +1,7 @@
 package com.example.demo.core.exception;
 
+import java.util.Random;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,6 +15,6 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class ApiException extends RuntimeException{
 	
-	private static final long serialVersionUID = -7806029002430564887L;
+	private static final long serialVersionUID = new Random().nextLong();
 	private String message;
 }

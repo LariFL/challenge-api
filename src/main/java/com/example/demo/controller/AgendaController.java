@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.example.demo.model.Agenda;
 import com.example.demo.request.AgendaRequest;
@@ -24,6 +25,7 @@ public class AgendaController {
 	private AgendaAddService agendaAddService;
 	
 	@PostMapping(value="/add")
+	@ResponseStatus(HttpStatus.CREATED)
 	@ApiOperation(value = "Add a new agenda")
 	public ResponseEntity<Agenda> add(
 			@RequestBody AgendaRequest agendaRequest) {		

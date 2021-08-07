@@ -12,6 +12,9 @@ import com.example.demo.repository.AgendaRepository;
 import com.example.demo.repository.SessionRepository;
 import com.example.demo.request.SessionRequest;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class SessioOpenService {
 
@@ -28,6 +31,7 @@ public class SessioOpenService {
 		if(sessionRequest.getOpeningTimeInMinutes() <= 0)
 			sessionRequest.setOpeningTimeInMinutes(1);
 		
+		log.info("Session opened successfully.");
 		return sessionRepository.save(createSession(sessionRequest));
 	}
 	

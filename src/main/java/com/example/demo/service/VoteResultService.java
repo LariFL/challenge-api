@@ -11,6 +11,9 @@ import com.example.demo.repository.SessionRepository;
 import com.example.demo.repository.VoteRepository;
 import com.example.demo.response.VoteResponse;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class VoteResultService {
 
@@ -24,6 +27,7 @@ public class VoteResultService {
 
 	public VoteResponse execute(Long id_session) {		
 		validatesBusinessRules(id_session);
+		log.info("Voting result calculated successfully.");
 		return voteRepository.calcVoteResult(id_session);
 	}
 	

@@ -1,0 +1,48 @@
+2021-08-07 16:31:51,613 INFO com.example.demo.ChallengeApiApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-07 16:31:55,475 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-07 16:31:55,476 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-08-07 16:31:55,712 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-07 16:31:55,776 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-07 16:31:56,123 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-07 16:31:56,398 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-07 16:31:56,529 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.4.10.Final}
+2021-08-07 16:31:56,779 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-08-07 16:31:57,021 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-07 16:31:58,111 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-07 16:31:58,115 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-07 16:31:59,723 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-07 16:31:59,724 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-07 16:31:59,732 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-07 16:31:59,733 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-07 16:32:01,292 INFO com.example.demo.ChallengeApiApplication [restartedMain] Started ChallengeApiApplication in 11.506 seconds (JVM running for 14.171)
+2021-08-07 16:32:23,649 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-07 16:32:23,783 ERROR com.example.demo.core.exception.ApiControllerAdvice [http-nio-8080-exec-1] Voting session not found.
+2021-08-07 16:32:25,712 ERROR com.example.demo.core.exception.ApiControllerAdvice [http-nio-8080-exec-4] Voting session not found.
+2021-08-07 16:32:57,647 ERROR com.example.demo.core.exception.ApiControllerAdvice [http-nio-8080-exec-6] Voting session not found.
+2021-08-07 16:34:04,479 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [RMI TCP Connection(7)-127.0.0.1] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-07 16:34:04,504 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(7)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-08-07 16:34:04,613 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(7)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-08-07 16:34:04,644 INFO org.apache.catalina.core.StandardService [RMI TCP Connection(7)-127.0.0.1] Stopping service [Tomcat]
+2021-08-07 16:34:04,646 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(7)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-08-07 16:35:09,947 INFO com.example.demo.ChallengeApiApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-07 16:35:13,156 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-07 16:35:13,157 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-08-07 16:35:13,419 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-07 16:35:13,485 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-07 16:35:13,792 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-07 16:35:14,063 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-07 16:35:14,181 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.4.10.Final}
+2021-08-07 16:35:14,479 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-08-07 16:35:14,727 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-07 16:35:18,207 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-07 16:35:18,222 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-07 16:35:20,470 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-07 16:35:20,471 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-07 16:35:20,479 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-07 16:35:20,480 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-07 16:35:22,067 INFO com.example.demo.ChallengeApiApplication [restartedMain] Started ChallengeApiApplication in 13.896 seconds (JVM running for 15.998)
+2021-08-07 16:35:42,150 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-07 16:35:42,436 ERROR com.example.demo.core.exception.ApiControllerAdvice [http-nio-8080-exec-1] Voting session not found.
+2021-08-07 16:36:28,392 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-7] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-07 16:36:28,406 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown initiated...
+2021-08-07 16:36:28,652 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown completed.

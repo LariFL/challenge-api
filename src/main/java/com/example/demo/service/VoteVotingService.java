@@ -14,7 +14,9 @@ import com.example.demo.repository.VoteRepository;
 import com.example.demo.request.VoteRequest;
 
 import feign.FeignException;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 public class VoteVotingService {
 
@@ -35,6 +37,7 @@ public class VoteVotingService {
 	
 	public Vote execute(VoteRequest voteRequest) {		
 		validatesBusinessRules(voteRequest);
+		log.info("Vote successfully counted.");
 		return voteRepository.save(createVote(voteRequest));
 	}
 	
