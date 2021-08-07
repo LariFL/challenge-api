@@ -9,17 +9,14 @@ import com.example.demo.repository.AgendaRepository;
 import com.example.demo.request.AgendaRequest;
 
 @Service
-public class AgendaSaveService {
+public class AgendaAddService {
 
 	@Autowired
 	private AgendaRepository agendaRepository;
 	
 	public Agenda execute(AgendaRequest agendaRequest) {		
 		validatesBusinessRules(agendaRequest);
-		return agendaRepository.save(Agenda.builder()
-										.name(agendaRequest.getName())
-										.description(agendaRequest.getDescription())
-										.build());
+		return agendaRepository.save(createAgenda(agendaRequest));
 	}
 	
 	private void validatesBusinessRules(AgendaRequest agendaRequest) {		
@@ -28,5 +25,12 @@ public class AgendaSaveService {
 		
 		if(agendaRequest.getName().trim().equals(""))
 			throw new ApiException("Name information cannot be empty.");		
+	}
+	
+	private Agenda createAgenda(AgendaRequest agendaRequest) {
+		return Agenda.builder()
+				.name(agendaRequest.getName())
+				.description(agendaRequest.getDescription())
+				.build();
 	}
 }

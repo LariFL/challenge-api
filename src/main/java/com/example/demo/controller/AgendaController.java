@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.model.Agenda;
 import com.example.demo.request.AgendaRequest;
-import com.example.demo.service.AgendaSaveService;
+import com.example.demo.service.AgendaAddService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -21,13 +21,13 @@ import io.swagger.annotations.ApiOperation;
 public class AgendaController {
 	
 	@Autowired
-	private AgendaSaveService agendaSaveService;
+	private AgendaAddService agendaAddService;
 	
 	@PostMapping(value="/add")
 	@ApiOperation(value = "Add a new agenda")
 	public ResponseEntity<Agenda> add(
 			@RequestBody AgendaRequest agendaRequest) {		
 		return ResponseEntity.status(HttpStatus.CREATED)
-				.body(agendaSaveService.execute(agendaRequest));
+				.body(agendaAddService.execute(agendaRequest));
 	}	
 }

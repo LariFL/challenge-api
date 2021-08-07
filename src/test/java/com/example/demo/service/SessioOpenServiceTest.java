@@ -5,6 +5,7 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.time.LocalDateTime;
 import java.util.Random;
 
 import org.junit.Test;
@@ -18,12 +19,13 @@ import com.example.demo.model.Agenda;
 import com.example.demo.model.Session;
 import com.example.demo.repository.AgendaRepository;
 import com.example.demo.repository.SessionRepository;
+import com.example.demo.request.SessionRequest;
 
 @RunWith(MockitoJUnitRunner.class)
-public class SessionSaveServiceTest {
+public class SessioOpenServiceTest {
 
 	@InjectMocks
-	private SessionSaveService service;
+	private SessioOpenService service;
 
 	@Mock
 	private SessionRepository sessionRepository;
@@ -34,60 +36,47 @@ public class SessionSaveServiceTest {
 	private static Long ID_RANDOM = new Random().nextLong();
 	
 	@Test
-	public void mustSaveSession() {
-		
+	public void mustOpenSession() {
 		when(agendaRepository.findAgenda(any(Long.class)))
 			.thenReturn(createAgendaMock());
-				
-		Session session = getSuccessSession();
-		service.execute(session);
-
+		
+		service.execute(getSuccessSessionRequest());
 		verify(sessionRepository).save(any(Session.class));
 	}
 	
 	@Test(expected = ApiException.class)
-	public void errorShouldOccurWhenSaveSessionNoAgenda(){	
+	public void errorShouldOccurWhenOpenSessionWithNullAgenda() {		
+		SessionRequest sessionRequest = getSuccessSessionRequest();
+		sessionRequest.setId_agenda(null);
 		
-		Session session = getSuccessSession();
-		session.setAgenda(null);
-
-		service.execute(session);
-
+		service.execute(sessionRequest);
 		verify(sessionRepository, never()).save(any(Session.class));
 	}
 	
 	@Test(expected = ApiException.class)
-	public void errorShouldOccurWhenSaveSessionAndNotFoundAgenda(){	
-		
-		Session session = getSuccessSession();
-
-		service.execute(session);
-
+	public void errorShouldOccurWhenOpenSessionAndNotFoundAgenda() {			
+		service.execute(getSuccessSessionRequest());
 		verify(sessionRepository, never()).save(any(Session.class));
 	}
 
 	@Test(expected = ApiException.class)
-	public void errorShouldOccurWhenSaveSessionAndThereIsAlreadyAnOpenSession(){			
+	public void errorShouldOccurWhenOpenSessionAndThereIsAlreadyAnOpenSession() {		
 		
 		when(agendaRepository.findAgenda(any(Long.class)))
 			.thenReturn(createAgendaMock());
 				
 		when(sessionRepository.findByOpenAgendaSession(any(Long.class)))
-			.thenReturn(getSuccessSession());
+			.thenReturn(createSessionMock());
 		
-		Session session = getSuccessSession();
-
-		service.execute(session);
-
+		service.execute(getSuccessSessionRequest());
 		verify(sessionRepository, never()).save(any(Session.class));
 	}	
 	
-	private static Session getSuccessSession() {
-		return Session
+	private static SessionRequest getSuccessSessionRequest() {
+		return SessionRequest
 				.builder()
-				.id(ID_RANDOM)
+				.id_agenda(ID_RANDOM)
 				.openingTimeInMinutes(1)
-				.agenda(Agenda.builder().id(ID_RANDOM).build())
 				.build();
 	}
 	
@@ -97,6 +86,16 @@ public class SessionSaveServiceTest {
 				.id(ID_RANDOM)
 				.name("Test agenda name")
 				.description("Test agenda description")
+				.build();
+	}
+	
+	private static Session createSessionMock() {
+		return Session
+				.builder()
+				.id(ID_RANDOM)
+				.openingTimeInMinutes(30)
+				.dateEndTime(LocalDateTime.now().plusMinutes(30))
+				.agenda(createAgendaMock())
 				.build();
 	}
 }

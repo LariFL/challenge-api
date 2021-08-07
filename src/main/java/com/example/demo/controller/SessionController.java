@@ -1,23 +1,19 @@
 package com.example.demo.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.model.Session;
-import com.example.demo.service.SessionFindService;
-import com.example.demo.service.SessionGetService;
-import com.example.demo.service.SessionSaveService;
+import com.example.demo.request.SessionRequest;
+import com.example.demo.service.SessioOpenService;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @Controller
 @RequestMapping("/v1/session")
@@ -25,39 +21,13 @@ import io.swagger.annotations.Api;
 public class SessionController {
 	
 	@Autowired
-	private SessionGetService sessionGetService;
+	private SessioOpenService sessioOpenService;
 	
-	@Autowired
-	private SessionFindService sessionFindService;
-	
-	@Autowired
-	private SessionSaveService sessionSaveService;
-	
-	@GetMapping(value="/get")
-	public ResponseEntity<List<Session>> get() {
-		
-		List<Session> lista = sessionGetService.execute();
-		return ResponseEntity.ok(lista);
+	@PostMapping(value="/open")
+	@ApiOperation(value = "Open a session for an agenda")
+	public ResponseEntity<Session> open(
+			@RequestBody SessionRequest sessionRequest) {		
+		return ResponseEntity.status(HttpStatus.OK)
+				.body(sessioOpenService.execute(sessionRequest));
 	}
-	
-	@GetMapping(value="/find")
-	public ResponseEntity<Session> find(
-			@RequestParam(required=false) Long id) {
-		
-		Session session = sessionFindService.execute(id);
-		
-		if (session == null)
-			return ResponseEntity.notFound().build();
-		
-		return ResponseEntity.ok(session);
-	}
-	
-	@PostMapping(value="/save")
-	public ResponseEntity<Session> save(
-			@RequestBody Session session) {
-		
-		sessionSaveService.execute(session);
-		return ResponseEntity.status(HttpStatus.OK).build();
-	}
-		
 }

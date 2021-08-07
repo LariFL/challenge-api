@@ -1,7 +1,5 @@
 package com.example.demo.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,12 +13,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.example.demo.model.Vote;
+import com.example.demo.request.VoteRequest;
 import com.example.demo.response.VoteResponse;
-import com.example.demo.service.VoteGetService;
-import com.example.demo.service.VoteResponseService;
-import com.example.demo.service.VoteSaveService;
+import com.example.demo.service.VoteResultService;
+import com.example.demo.service.VoteVotingService;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @Controller
 @RequestMapping("/v1/vote")
@@ -28,36 +27,25 @@ import io.swagger.annotations.Api;
 public class VoteController {
 	
 	@Autowired
-	private VoteGetService voteGetService;
+	private VoteVotingService voteVotingService;
 	
 	@Autowired
-	private VoteSaveService voteSaveService;
+	private VoteResultService voteResultService;
 	
-	@Autowired
-	private VoteResponseService voteResponseService;
-	
-	@GetMapping(value="/get")
-	public ResponseEntity<List<Vote>> get() {
-		
-		List<Vote> lista = voteGetService.execute();
-		return ResponseEntity.ok(lista);
+	@PostMapping(value="/voting")
+	@ApiOperation(value = "Takes a associate's vote in a session")
+	public ResponseEntity<Vote> Voting(
+			@RequestBody VoteRequest voteRequest) {
+		return ResponseEntity.status(HttpStatus.OK)
+				.body(voteVotingService.execute(voteRequest));
 	}
 	
-	@PostMapping(value="/save")
-	public ResponseEntity<Vote> save(
-			@RequestBody Vote vote) {
-		
-		voteSaveService.execute(vote);
-		return ResponseEntity.status(HttpStatus.OK).build();
-	}
-	
-	@GetMapping(value="/result")
+	@GetMapping(value="/resultBySession")
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
-	public VoteResponse result(
-			@RequestParam(required=false) Long id) {
-		
-		VoteResponse voteResult = voteResponseService.execute(id);
-		return voteResult;
+	@ApiOperation(value = "Session voting result")
+	public VoteResponse resultBySession(
+			@RequestParam(required=true) Long id) {
+		return voteResultService.execute(id);
 	}
 }

@@ -16,24 +16,22 @@ import com.example.demo.repository.AgendaRepository;
 import com.example.demo.request.AgendaRequest;
 
 @RunWith(MockitoJUnitRunner.class)
-public class AgendaSaveServiceTest {
+public class AgendaAddServiceTest {
 
 	@InjectMocks
-	private AgendaSaveService service;
+	private AgendaAddService service;
 
 	@Mock
 	private AgendaRepository repository;
 	
 	@Test
-	public void mustSaveAgenda() {
-		
+	public void mustAddAgenda() {		
 		service.execute(getSuccessAgendaRequest());
 		verify(repository).save(any(Agenda.class));
 	}
 	
 	@Test(expected = ApiException.class)
-	public void errorShouldOccurWhenSaveAgendaWithNullName(){	
-		
+	public void errorShouldOccurWhenAddAgendaWithNullName() {		
 		AgendaRequest agendaRequest = getSuccessAgendaRequest();
 		agendaRequest.setName(null);
 
@@ -42,8 +40,7 @@ public class AgendaSaveServiceTest {
 	}
 	
 	@Test(expected = ApiException.class)
-	public void errorShouldOccurWhenSaveAgendaWithEmptyName(){	
-		
+	public void errorShouldOccurWhenAddAgendaWithEmptyName() {		
 		AgendaRequest agendaRequest = getSuccessAgendaRequest();
 		agendaRequest.setName("");
 
