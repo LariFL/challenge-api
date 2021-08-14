@@ -22,20 +22,19 @@ public class VoteResultService {
 	
 	@Autowired
 	private SessionRepository sessionRepository;
-	
-	private Session session;
 
 	public VoteResponse execute(Long id_session) {		
 		validatesBusinessRules(id_session);
+		VoteResponse voteResponse = voteRepository.calcVoteResult(id_session);
 		log.info("Voting result calculated successfully.");
-		return voteRepository.calcVoteResult(id_session);
+		return voteResponse;
 	}
 	
 	private void validatesBusinessRules(Long id) {
 		if(id == null)
 			throw new ChallengeException("It's necessary to inform the id of the session to be counted.");
 		
-		session = sessionRepository.findSession(id);
+		Session session = sessionRepository.findSession(id);
 		if(session == null)
 			throw new ChallengeException("Voting session not found.");
 		

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.model.Session;
 import com.example.demo.request.SessionRequest;
-import com.example.demo.service.SessioOpenService;
+import com.example.demo.service.SessionOpenService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -21,13 +21,13 @@ import io.swagger.annotations.ApiOperation;
 public class SessionController {
 	
 	@Autowired
-	private SessioOpenService sessioOpenService;
+	private SessionOpenService sessionOpenService;
 	
 	@PostMapping(value="/open")
 	@ApiOperation(value = "Open a session for an agenda")
 	public ResponseEntity<Session> open(
 			@RequestBody SessionRequest sessionRequest) {		
 		return ResponseEntity.status(HttpStatus.OK)
-				.body(sessioOpenService.execute(sessionRequest));
+				.body(sessionOpenService.execute(sessionRequest));
 	}
 }

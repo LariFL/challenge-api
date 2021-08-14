@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.config;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @ControllerAdvice
-public class ChallengeControllerAdvice {
+public class ChallengeExceptionConfig {
 
     @ExceptionHandler(ChallengeException.class)
     @ResponseBody

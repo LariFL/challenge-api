@@ -19,8 +19,9 @@ public class AgendaAddService {
 	
 	public Agenda execute(AgendaRequest agendaRequest) {		
 		validatesBusinessRules(agendaRequest);
+		Agenda agenda = agendaRepository.save(createAgenda(agendaRequest));
 		log.info("Agenda created successfully.");
-		return agendaRepository.save(createAgenda(agendaRequest));
+		return agenda;
 	}
 	
 	private void validatesBusinessRules(AgendaRequest agendaRequest) {		

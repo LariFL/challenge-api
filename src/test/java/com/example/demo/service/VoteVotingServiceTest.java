@@ -23,6 +23,8 @@ import com.example.demo.repository.SessionRepository;
 import com.example.demo.repository.VoteRepository;
 import com.example.demo.request.VoteRequest;
 import com.example.demo.response.CPFResponse;
+import com.example.demo.util.AssociateStatusEnum;
+import com.example.demo.util.VoteAnswerEnum;
 
 @RunWith(MockitoJUnitRunner.class)
 public class VoteVotingServiceTest {
@@ -40,8 +42,6 @@ public class VoteVotingServiceTest {
 	private CPFClient cpfClient;
 	
 	private static Long ID_RANDOM = new Random().nextLong();	
-	private String ASSOCIATE_CANNOT_VOTE = "UNABLE_TO_VOTE";
-	private String ASSOCIATE_CAN_VOTE = "ABLE_TO_VOTE";
 	
 	@Test
 	public void mustVotingVote() {		
@@ -49,7 +49,7 @@ public class VoteVotingServiceTest {
 			.thenReturn(createSessionMock());
 		
 		when(cpfClient.getCpf(any(String.class)))
-			.thenReturn(createCPFResponseMock(ASSOCIATE_CAN_VOTE));
+			.thenReturn(createCPFResponseMock(AssociateStatusEnum.ASSOCIATE_CAN_VOTE.getValue()));
 		
 		service.execute(getSuccessVoteRequest());
 		verify(voteRepository).save(any(Vote.class));
@@ -111,7 +111,7 @@ public class VoteVotingServiceTest {
 			.thenReturn(createSessionMock());
 	
 		when(cpfClient.getCpf(any(String.class)))
-			.thenReturn(createCPFResponseMock(ASSOCIATE_CANNOT_VOTE));
+			.thenReturn(createCPFResponseMock(AssociateStatusEnum.ASSOCIATE_CANNOT_VOTE.getValue()));
 		
 		service.execute(getSuccessVoteRequest());
 		verify(voteRepository, never()).save(any(Vote.class));
@@ -153,7 +153,7 @@ public class VoteVotingServiceTest {
 				.builder()
 				.id(ID_RANDOM)
 				.cpfAssociate("96887565048")
-				.answer("Y")
+				.answer(VoteAnswerEnum.ANSWER_YES.getValue())
 				.session(createSessionMock())
 				.build();
 	}
@@ -170,7 +170,7 @@ public class VoteVotingServiceTest {
 				.builder()
 				.id_session(ID_RANDOM)
 				.cpfAssociate("96887565048")
-				.answer("Y")
+				.answer(VoteAnswerEnum.ANSWER_YES.getValue())
 				.build();
 	}	
 }

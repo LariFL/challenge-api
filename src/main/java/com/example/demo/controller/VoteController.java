@@ -32,9 +32,9 @@ public class VoteController {
 	@Autowired
 	private VoteResultService voteResultService;
 	
-	@PostMapping(value="/voting")
+	@PostMapping(value="/voteSessionAgenda")
 	@ApiOperation(value = "Takes a associate's vote in a session")
-	public ResponseEntity<Vote> Voting(
+	public ResponseEntity<Vote> voteSessionAgenda(
 			@RequestBody VoteRequest voteRequest) {
 		return ResponseEntity.status(HttpStatus.OK)
 				.body(voteVotingService.execute(voteRequest));

@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.exception.ChallengeException;
-import com.example.demo.model.Agenda;
 import com.example.demo.model.Session;
 import com.example.demo.repository.AgendaRepository;
 import com.example.demo.repository.SessionRepository;
@@ -16,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
-public class SessioOpenService {
+public class SessionOpenService {
 
 	@Autowired
 	private SessionRepository sessionRepository;
@@ -24,32 +23,33 @@ public class SessioOpenService {
 	@Autowired
 	private AgendaRepository agendaRepository;
 	
-	private Agenda agenda;
+	private static int ZERO_SESSION_TIME_IN_MINUTES = 0;
+	private static int DEFAULT_SESSIONN_TIME_IN_MINUTES = 1;
 	
 	public Session execute(SessionRequest sessionRequest) {
 		validatesBusinessRules(sessionRequest);		
-		if(sessionRequest.getOpeningTimeInMinutes() <= 0)
-			sessionRequest.setOpeningTimeInMinutes(1);
-		
+		Session session = sessionRepository.save(createSession(sessionRequest));
 		log.info("Session opened successfully.");
-		return sessionRepository.save(createSession(sessionRequest));
+		return session;
 	}
 	
 	private void validatesBusinessRules(SessionRequest sessionRequest) {
 		if(sessionRequest.getId_agenda() == null)
 			throw new ChallengeException("Agenda information is required.");
 
-		agenda = agendaRepository.findAgenda(sessionRequest.getId_agenda());
-		if(agenda == null)
+		if(!agendaRepository.existsById(sessionRequest.getId_agenda()))
 			throw new ChallengeException("Agenda not found.");
 		
 		if(sessionRepository.findByOpenAgendaSession(sessionRequest.getId_agenda()) != null)
 			throw new ChallengeException("There's already an open session for the informed agenda.");
+		
+		if(sessionRequest.getOpeningTimeInMinutes() <= ZERO_SESSION_TIME_IN_MINUTES)
+			sessionRequest.setOpeningTimeInMinutes(DEFAULT_SESSIONN_TIME_IN_MINUTES);
 	}
 	
 	private Session createSession(SessionRequest sessionRequest) {
 		return Session.builder()
-				.agenda(agenda)
+				.agenda(agendaRepository.findAgenda(sessionRequest.getId_agenda()))
 				.openingTimeInMinutes(sessionRequest.getOpeningTimeInMinutes())
 				.dateEndTime(LocalDateTime.now().plusMinutes(sessionRequest.getOpeningTimeInMinutes()))
 				.build();

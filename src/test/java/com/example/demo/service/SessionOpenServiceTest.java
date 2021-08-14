@@ -22,10 +22,10 @@ import com.example.demo.repository.SessionRepository;
 import com.example.demo.request.SessionRequest;
 
 @RunWith(MockitoJUnitRunner.class)
-public class SessioOpenServiceTest {
+public class SessionOpenServiceTest {
 
 	@InjectMocks
-	private SessioOpenService service;
+	private SessionOpenService service;
 
 	@Mock
 	private SessionRepository sessionRepository;
@@ -37,15 +37,27 @@ public class SessioOpenServiceTest {
 	
 	@Test
 	public void mustOpenSession() {
-		when(agendaRepository.findAgenda(any(Long.class)))
-			.thenReturn(createAgendaMock());
+		when(agendaRepository.existsById(any(Long.class)))
+			.thenReturn(true);
 		
 		service.execute(getSuccessSessionRequest());
 		verify(sessionRepository).save(any(Session.class));
 	}
 	
+	@Test
+	public void mustOpenSessionWithNegativeTime() {
+		when(agendaRepository.existsById(any(Long.class)))
+			.thenReturn(true);
+
+		SessionRequest sessionRequest = getSuccessSessionRequest();
+		sessionRequest.setOpeningTimeInMinutes(-1);
+
+		service.execute(sessionRequest);
+		verify(sessionRepository).save(any(Session.class));
+	}
+	
 	@Test(expected = ChallengeException.class)
-	public void errorShouldOccurWhenOpenSessionWithNullAgenda() {		
+	public void errorShouldOccurWhenOpenSessionWithNullAgenda() {
 		SessionRequest sessionRequest = getSuccessSessionRequest();
 		sessionRequest.setId_agenda(null);
 		
@@ -54,16 +66,18 @@ public class SessioOpenServiceTest {
 	}
 	
 	@Test(expected = ChallengeException.class)
-	public void errorShouldOccurWhenOpenSessionAndNotFoundAgenda() {			
+	public void errorShouldOccurWhenOpenSessionAndNotFoundAgenda() {	
+		when(agendaRepository.existsById(any(Long.class)))
+			.thenReturn(false);
+		
 		service.execute(getSuccessSessionRequest());
 		verify(sessionRepository, never()).save(any(Session.class));
 	}
 
 	@Test(expected = ChallengeException.class)
 	public void errorShouldOccurWhenOpenSessionAndThereIsAlreadyAnOpenSession() {		
-		
-		when(agendaRepository.findAgenda(any(Long.class)))
-			.thenReturn(createAgendaMock());
+		when(agendaRepository.existsById(any(Long.class)))
+			.thenReturn(true);
 				
 		when(sessionRepository.findByOpenAgendaSession(any(Long.class)))
 			.thenReturn(createSessionMock());

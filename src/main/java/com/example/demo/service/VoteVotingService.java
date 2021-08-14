@@ -12,6 +12,8 @@ import com.example.demo.model.Vote;
 import com.example.demo.repository.SessionRepository;
 import com.example.demo.repository.VoteRepository;
 import com.example.demo.request.VoteRequest;
+import com.example.demo.util.AssociateStatusEnum;
+import com.example.demo.util.VoteAnswerEnum;
 
 import feign.FeignException;
 import lombok.extern.slf4j.Slf4j;
@@ -29,16 +31,13 @@ public class VoteVotingService {
 	@Autowired
 	private CPFClient cpfClient;
 	
-	Session session;
-	
-	private String ASSOCIATE_CANNOT_VOTE = "UNABLE_TO_VOTE";	
-	private String ANSWER_YES = "Y";
-	private String ANSWER_NO = "N";
-	
+	private Session session;
+		
 	public Vote execute(VoteRequest voteRequest) {		
 		validatesBusinessRules(voteRequest);
+		Vote vote = voteRepository.save(createVote(voteRequest));
 		log.info("Vote successfully counted.");
-		return voteRepository.save(createVote(voteRequest));
+		return vote;
 	}
 	
 	private void validatesBusinessRules(VoteRequest voteRequest) {
@@ -66,7 +65,7 @@ public class VoteVotingService {
 	
 	private void validateIfAnswerIsValid(VoteRequest voteRequest) {
 		putAnswerToUpperAndRemoveSpaces(voteRequest);
-		if(!(ANSWER_YES).equals(voteRequest.getAnswer()) && !(ANSWER_NO).equals(voteRequest.getAnswer()))
+		if(!(VoteAnswerEnum.ANSWER_YES.getValue()).equals(voteRequest.getAnswer()) && !(VoteAnswerEnum.ANSWER_NO.getValue()).equals(voteRequest.getAnswer()))
 			throw new ChallengeException("Invalid vote! Use 'Y' for yes or 'N' for no.");
 	}
 	
@@ -86,7 +85,7 @@ public class VoteVotingService {
 	
 	private void validateIfAssociateCannotVoteOrCPFIsInvalid(VoteRequest voteRequest) {
 		try {
-			if(cpfClient.getCpf(voteRequest.getCpfAssociate()).getStatus().equals(ASSOCIATE_CANNOT_VOTE))
+			if(cpfClient.getCpf(voteRequest.getCpfAssociate()).getStatus().equals(AssociateStatusEnum.ASSOCIATE_CANNOT_VOTE.getValue()))
 				throw new ChallengeException("Associate cannot vote.");
 		} catch (FeignException e) {
 			throw new ChallengeException("Associate's CPF is invalid.");

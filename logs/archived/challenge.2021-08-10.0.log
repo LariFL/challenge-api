@@ -1,0 +1,565 @@
+2021-08-10 20:17:54,425 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:17:54,473 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:19:28,913 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:21:25,073 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:28:35,394 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:29:09,452 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:33:26,454 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:34:30,094 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:39:06,475 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:39:06,507 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:39:06,548 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:40:12,533 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:42:17,728 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.ChallengeApiApplicationTests], using SpringBootContextLoader
+2021-08-10 20:42:17,743 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.example.demo.ChallengeApiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-08-10 20:42:17,745 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.ChallengeApiApplicationTests]: ChallengeApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-08-10 20:42:18,334 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.ChallengeApiApplication for test class com.example.demo.ChallengeApiApplicationTests
+2021-08-10 20:42:18,796 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-08-10 20:42:18,874 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4eeea57d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@780ec4a5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@e24ddd0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6f70f32f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@548e76f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5aabbb29, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@72c927f1, org.springframework.test.context.event.EventPublishingTestExecutionListener@1ac85b0c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3dd69f5a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3aa3193a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1ee4730, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@59a67c3a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5003041b]
+2021-08-10 20:42:23,084 INFO com.example.demo.ChallengeApiApplicationTests [main] No active profile set, falling back to default profiles: default
+2021-08-10 20:42:27,620 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 20:42:28,115 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 443ms. Found 3 JPA repository interfaces.
+2021-08-10 20:42:29,195 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=53774fdc-730b-3cdd-b565-2a4e482440b8
+2021-08-10 20:42:29,830 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.example.demo.client.CPFClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 20:42:30,394 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 20:42:32,403 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 20:42:38,161 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.ChallengeApiApplicationTests], using SpringBootContextLoader
+2021-08-10 20:42:38,182 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.example.demo.ChallengeApiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-08-10 20:42:38,185 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.ChallengeApiApplicationTests]: ChallengeApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-08-10 20:42:38,427 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.ChallengeApiApplication for test class com.example.demo.ChallengeApiApplicationTests
+2021-08-10 20:42:38,719 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-08-10 20:42:38,753 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@42257bdd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7689ddef, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@687a762c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1a2e2935, org.springframework.test.context.support.DirtiesContextTestExecutionListener@733c423e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b629f13, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70925b45, org.springframework.test.context.event.EventPublishingTestExecutionListener@1b9ea3e3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@aa22f1c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@55e7a35c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@37cd92d6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5922ae77, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4263b080]
+2021-08-10 20:42:41,803 INFO com.example.demo.ChallengeApiApplicationTests [main] No active profile set, falling back to default profiles: default
+2021-08-10 20:42:44,228 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 20:42:44,474 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 218ms. Found 3 JPA repository interfaces.
+2021-08-10 20:42:45,228 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=53774fdc-730b-3cdd-b565-2a4e482440b8
+2021-08-10 20:42:45,652 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.example.demo.client.CPFClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 20:42:45,947 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 20:42:46,663 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 20:42:47,030 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2021-08-10 20:42:47,507 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-08-10 20:42:48,929 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-08-10 20:42:50,978 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-08-10 20:42:51,317 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-10 20:42:54,633 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [main] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-10 20:42:54,640 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-10 20:42:54,676 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 20:42:57,561 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-10 20:43:03,739 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [main] No spring.application.name found, defaulting to 'application'
+2021-08-10 20:43:03,797 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2021-08-10 20:43:03,798 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 20:43:03,884 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2021-08-10 20:43:03,884 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 20:43:06,131 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-10 20:43:08,070 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-10 20:43:08,426 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/challenge'
+2021-08-10 20:43:10,298 INFO com.example.demo.ChallengeApiApplicationTests [main] Started ChallengeApiApplicationTests in 31.442 seconds (JVM running for 35.673)
+2021-08-10 20:43:12,173 INFO com.example.demo.service.VoteVotingService [main] Vote successfully counted.
+2021-08-10 20:43:12,303 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:43:12,339 INFO com.example.demo.service.VoteResultService [main] Voting result calculated successfully.
+2021-08-10 20:43:12,354 INFO com.example.demo.service.AgendaAddService [main] Agenda created successfully.
+2021-08-10 20:43:12,371 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-10 20:43:12,433 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 20:43:12,434 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-10 20:43:13,092 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-08-10 20:43:13,744 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-08-10 20:45:49,444 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:45:49,481 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:46:16,963 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.ChallengeApiApplicationTests], using SpringBootContextLoader
+2021-08-10 20:46:16,980 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.example.demo.ChallengeApiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-08-10 20:46:16,983 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.ChallengeApiApplicationTests]: ChallengeApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-08-10 20:46:17,256 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.ChallengeApiApplication for test class com.example.demo.ChallengeApiApplicationTests
+2021-08-10 20:46:17,555 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-08-10 20:46:17,619 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2102a4d5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@210386e0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d4d3fe7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@65f87a2c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51684e4a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6ce1f601, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@38875e7d, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e886a5b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d816dde, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e33c391, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c451c9c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31c269fd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@372b0d86]
+2021-08-10 20:46:20,163 INFO com.example.demo.ChallengeApiApplicationTests [main] No active profile set, falling back to default profiles: default
+2021-08-10 20:46:23,080 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 20:46:23,333 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 227ms. Found 3 JPA repository interfaces.
+2021-08-10 20:46:24,165 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=53774fdc-730b-3cdd-b565-2a4e482440b8
+2021-08-10 20:46:24,565 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.example.demo.client.CPFClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 20:46:24,869 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 20:46:25,565 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 20:46:25,786 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2021-08-10 20:46:26,222 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-08-10 20:46:26,910 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-08-10 20:46:27,450 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-08-10 20:46:27,519 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-10 20:46:29,613 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [main] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-10 20:46:29,622 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-10 20:46:29,643 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 20:46:31,739 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-10 20:46:34,374 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [main] No spring.application.name found, defaulting to 'application'
+2021-08-10 20:46:34,386 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2021-08-10 20:46:34,386 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 20:46:34,403 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2021-08-10 20:46:34,403 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 20:46:35,094 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-10 20:46:35,667 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-10 20:46:35,964 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/challenge'
+2021-08-10 20:46:37,873 INFO com.example.demo.ChallengeApiApplicationTests [main] Started ChallengeApiApplicationTests in 20.135 seconds (JVM running for 25.396)
+2021-08-10 20:46:39,385 INFO com.example.demo.service.VoteVotingService [main] Vote successfully counted.
+2021-08-10 20:46:39,539 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:46:39,552 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 20:46:39,590 INFO com.example.demo.service.VoteResultService [main] Voting result calculated successfully.
+2021-08-10 20:46:39,618 INFO com.example.demo.service.AgendaAddService [main] Agenda created successfully.
+2021-08-10 20:46:39,664 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-10 20:46:39,703 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 20:46:39,708 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-10 20:46:40,016 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-08-10 20:46:40,242 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-08-10 21:59:19,557 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.ChallengeApiApplicationTests], using SpringBootContextLoader
+2021-08-10 21:59:19,603 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.example.demo.ChallengeApiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-08-10 21:59:19,616 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.ChallengeApiApplicationTests]: ChallengeApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-08-10 21:59:20,455 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.ChallengeApiApplication for test class com.example.demo.ChallengeApiApplicationTests
+2021-08-10 21:59:20,976 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-08-10 21:59:21,047 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2102a4d5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@210386e0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d4d3fe7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@65f87a2c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51684e4a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6ce1f601, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@38875e7d, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e886a5b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d816dde, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e33c391, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c451c9c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31c269fd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@372b0d86]
+2021-08-10 21:59:26,915 INFO com.example.demo.ChallengeApiApplicationTests [main] No active profile set, falling back to default profiles: default
+2021-08-10 21:59:30,978 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 21:59:31,304 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 303ms. Found 3 JPA repository interfaces.
+2021-08-10 21:59:32,328 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=53774fdc-730b-3cdd-b565-2a4e482440b8
+2021-08-10 21:59:33,148 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.example.demo.client.CPFClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 21:59:33,595 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 21:59:34,768 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 21:59:35,111 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2021-08-10 21:59:36,018 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-08-10 21:59:36,952 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-08-10 21:59:37,618 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-08-10 21:59:37,773 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-10 21:59:40,500 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [main] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-10 21:59:40,507 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-10 21:59:40,544 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 21:59:42,839 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-10 21:59:45,770 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [main] No spring.application.name found, defaulting to 'application'
+2021-08-10 21:59:45,791 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2021-08-10 21:59:45,792 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 21:59:45,831 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2021-08-10 21:59:45,832 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 21:59:47,074 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-10 21:59:47,717 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-10 21:59:48,090 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/challenge'
+2021-08-10 21:59:49,972 INFO com.example.demo.ChallengeApiApplicationTests [main] Started ChallengeApiApplicationTests in 28.611 seconds (JVM running for 34.632)
+2021-08-10 21:59:51,537 INFO com.example.demo.service.VoteVotingService [main] Vote successfully counted.
+2021-08-10 21:59:51,684 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 21:59:51,689 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 21:59:51,716 INFO com.example.demo.service.VoteResultService [main] Voting result calculated successfully.
+2021-08-10 21:59:51,726 INFO com.example.demo.service.AgendaAddService [main] Agenda created successfully.
+2021-08-10 21:59:51,823 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-10 21:59:51,883 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 21:59:51,900 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-10 21:59:51,940 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-08-10 21:59:52,212 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-08-10 22:00:20,962 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in C:\Users\larif\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2021-08-10 22:00:20,966 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-10 22:00:22,001 INFO com.example.demo.ChallengeApiApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-10 22:00:24,075 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 22:00:24,267 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 175ms. Found 3 JPA repository interfaces.
+2021-08-10 22:00:24,782 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=5c96c57c-2c11-3df4-a1b3-5bf00eef1793
+2021-08-10 22:00:25,103 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 22:00:26,624 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-10 22:00:26,670 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:00:26,671 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-10 22:00:26,672 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-08-10 22:00:27,075 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-10 22:00:27,076 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 5032 ms
+2021-08-10 22:00:27,156 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-10 22:00:27,492 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-10 22:00:27,504 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/challenge'
+2021-08-10 22:00:27,784 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 22:00:27,927 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.4.10.Final}
+2021-08-10 22:00:28,171 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-08-10 22:00:28,431 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-10 22:00:29,737 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-10 22:00:29,745 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-10 22:00:29,760 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 22:00:29,949 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-10 22:00:30,906 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-10 22:00:31,597 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-08-10 22:00:31,604 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-10 22:00:31,604 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 22:00:31,613 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-10 22:00:31,613 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 22:00:31,833 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-10 22:00:32,034 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-10 22:00:33,120 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:00:33,232 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-10 22:00:33,477 INFO com.example.demo.ChallengeApiApplication [restartedMain] Started ChallengeApiApplication in 13.649 seconds (JVM running for 16.152)
+2021-08-10 22:02:04,109 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-10 22:02:04,110 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-10 22:02:04,127 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 17 ms
+2021-08-10 22:02:04,567 INFO com.example.demo.service.AgendaAddService [http-nio-8080-exec-1] Agenda created successfully.
+2021-08-10 22:02:14,450 INFO com.example.demo.service.SessionOpenService [http-nio-8080-exec-3] Session opened successfully.
+2021-08-10 22:02:30,937 INFO com.example.demo.service.SessionOpenService [http-nio-8080-exec-4] Session opened successfully.
+2021-08-10 22:03:59,242 INFO com.example.demo.service.VoteVotingService [http-nio-8080-exec-8] Vote successfully counted.
+2021-08-10 22:04:07,396 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-9] Voting session closed.
+2021-08-10 22:04:07,403 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [ChallengeException(message=Voting session closed.)]
+2021-08-10 22:04:18,085 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-2] Voting session is still open.
+2021-08-10 22:04:18,087 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [ChallengeException(message=Voting session is still open.)]
+2021-08-10 22:04:25,346 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-3] Voting result calculated successfully.
+2021-08-10 22:04:32,021 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-4] Voting result calculated successfully.
+2021-08-10 22:08:26,835 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-8] Voting result calculated successfully.
+2021-08-10 22:08:35,860 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-9] Voting session is still open.
+2021-08-10 22:08:35,863 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [ChallengeException(message=Voting session is still open.)]
+2021-08-10 22:08:44,284 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-2] Voting result calculated successfully.
+2021-08-10 22:10:22,472 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-7] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-10 22:10:22,481 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 22:10:22,482 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-7] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-10 22:10:22,506 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown initiated...
+2021-08-10 22:10:22,713 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-1 - Shutdown completed.
+2021-08-10 22:10:23,670 INFO com.example.demo.ChallengeApiApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-10 22:10:24,660 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 22:10:24,702 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 42ms. Found 3 JPA repository interfaces.
+2021-08-10 22:10:24,841 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=5c96c57c-2c11-3df4-a1b3-5bf00eef1793
+2021-08-10 22:10:24,890 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 22:10:25,071 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-10 22:10:25,071 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:10:25,072 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-10 22:10:25,072 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-08-10 22:10:25,149 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-10 22:10:25,149 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1473 ms
+2021-08-10 22:10:25,189 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-08-10 22:10:25,200 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-08-10 22:10:25,200 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/challenge'
+2021-08-10 22:10:25,272 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 22:10:25,282 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-10 22:10:25,403 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-10 22:10:25,405 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-10 22:10:25,405 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 22:10:25,433 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-10 22:10:25,906 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-10 22:10:26,302 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-08-10 22:10:26,304 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-10 22:10:26,304 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 22:10:26,457 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-10 22:10:26,538 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-10 22:10:27,333 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:10:27,340 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-10 22:10:27,560 INFO com.example.demo.ChallengeApiApplication [restartedMain] Started ChallengeApiApplication in 4.685 seconds (JVM running for 610.235)
+2021-08-10 22:10:27,563 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-08-10 22:11:17,158 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-10 22:11:17,158 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-08-10 22:11:17,167 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 9 ms
+2021-08-10 22:11:17,174 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-2] Voting session not found.
+2021-08-10 22:11:17,183 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [ChallengeException(message=Voting session not found.)]
+2021-08-10 22:11:30,101 INFO com.example.demo.service.SessionOpenService [http-nio-8080-exec-4] Session opened successfully.
+2021-08-10 22:11:58,926 INFO com.example.demo.service.VoteVotingService [http-nio-8080-exec-7] Vote successfully counted.
+2021-08-10 22:12:03,876 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-8] Associate's vote already counted.
+2021-08-10 22:12:03,878 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [ChallengeException(message=Associate's vote already counted.)]
+2021-08-10 22:12:23,412 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-10] Associate's vote already counted.
+2021-08-10 22:12:23,417 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [ChallengeException(message=Associate's vote already counted.)]
+2021-08-10 22:12:28,893 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-2] Voting session not found.
+2021-08-10 22:12:28,895 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [ChallengeException(message=Voting session not found.)]
+2021-08-10 22:12:33,043 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-4] Voting result calculated successfully.
+2021-08-10 22:12:46,824 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-5] Voting result calculated successfully.
+2021-08-10 22:13:48,813 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-12] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-10 22:13:48,832 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-12] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 22:13:48,833 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [Thread-12] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-10 22:13:48,839 INFO com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-2 - Shutdown initiated...
+2021-08-10 22:13:48,984 INFO com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-2 - Shutdown completed.
+2021-08-10 22:13:49,792 INFO com.example.demo.ChallengeApiApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-10 22:13:50,697 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 22:13:50,748 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 50ms. Found 3 JPA repository interfaces.
+2021-08-10 22:13:50,885 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=5c96c57c-2c11-3df4-a1b3-5bf00eef1793
+2021-08-10 22:13:50,945 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 22:13:51,136 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-10 22:13:51,138 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:13:51,138 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-10 22:13:51,138 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-08-10 22:13:51,212 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-10 22:13:51,212 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 1415 ms
+2021-08-10 22:13:51,278 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-08-10 22:13:51,289 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-08-10 22:13:51,289 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/challenge'
+2021-08-10 22:13:51,378 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 22:13:51,391 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-10 22:13:51,523 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-10 22:13:51,525 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-10 22:13:51,525 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 22:13:51,558 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-10 22:13:51,897 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-10 22:13:52,188 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-08-10 22:13:52,188 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-10 22:13:52,188 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 22:13:52,303 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-10 22:13:52,378 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-10 22:13:52,977 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:13:52,986 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-10 22:13:53,229 INFO com.example.demo.ChallengeApiApplication [restartedMain] Started ChallengeApiApplication in 4.094 seconds (JVM running for 815.904)
+2021-08-10 22:13:53,233 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-08-10 22:14:01,882 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-10 22:14:01,883 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-08-10 22:14:01,890 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 7 ms
+2021-08-10 22:14:01,899 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-2] Voting session not found.
+2021-08-10 22:14:01,905 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [ChallengeException(message=Voting session not found.)]
+2021-08-10 22:14:11,875 INFO com.example.demo.service.SessionOpenService [http-nio-8080-exec-5] Session opened successfully.
+2021-08-10 22:14:15,771 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-4] Associate cannot vote.
+2021-08-10 22:14:15,772 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [ChallengeException(message=Associate cannot vote.)]
+2021-08-10 22:14:18,952 INFO com.example.demo.service.VoteVotingService [http-nio-8080-exec-7] Vote successfully counted.
+2021-08-10 22:14:22,329 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-8] Voting session is still open.
+2021-08-10 22:14:22,331 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [ChallengeException(message=Voting session is still open.)]
+2021-08-10 22:14:49,915 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-10] Voting session is still open.
+2021-08-10 22:14:49,917 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [ChallengeException(message=Voting session is still open.)]
+2021-08-10 22:15:39,116 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-2] Voting result calculated successfully.
+2021-08-10 22:15:44,804 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-3] Voting result calculated successfully.
+2021-08-10 22:28:42,965 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-6] Voting result calculated successfully.
+2021-08-10 22:29:07,395 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-7] Voting result calculated successfully.
+2021-08-10 22:29:28,523 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(37)-127.0.0.1] Application shutdown requested.
+2021-08-10 22:29:28,526 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(37)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-10 22:29:28,530 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(37)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 22:29:28,531 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [RMI TCP Connection(37)-127.0.0.1] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-10 22:29:28,537 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(37)-127.0.0.1] HikariPool-3 - Shutdown initiated...
+2021-08-10 22:29:28,960 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(37)-127.0.0.1] HikariPool-3 - Shutdown completed.
+2021-08-10 22:29:28,960 INFO org.apache.coyote.http11.Http11NioProtocol [RMI TCP Connection(37)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:29:28,985 INFO org.apache.catalina.core.StandardService [RMI TCP Connection(37)-127.0.0.1] Stopping service [Tomcat]
+2021-08-10 22:29:28,985 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(37)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-08-10 22:29:28,988 INFO org.apache.coyote.http11.Http11NioProtocol [RMI TCP Connection(37)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:29:28,993 INFO org.apache.coyote.http11.Http11NioProtocol [RMI TCP Connection(37)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8080"]
+2021-08-10 22:29:51,861 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.ChallengeApiApplicationTests], using SpringBootContextLoader
+2021-08-10 22:29:51,881 INFO org.springframework.test.context.support.AbstractContextLoader [main] Could not detect default resource locations for test class [com.example.demo.ChallengeApiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-08-10 22:29:51,884 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.ChallengeApiApplicationTests]: ChallengeApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-08-10 22:29:52,180 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.ChallengeApiApplication for test class com.example.demo.ChallengeApiApplicationTests
+2021-08-10 22:29:52,501 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-08-10 22:29:52,561 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2102a4d5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@210386e0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d4d3fe7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@65f87a2c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51684e4a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6ce1f601, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@38875e7d, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e886a5b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@d816dde, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e33c391, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c451c9c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31c269fd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@372b0d86]
+2021-08-10 22:29:55,631 INFO com.example.demo.ChallengeApiApplicationTests [main] No active profile set, falling back to default profiles: default
+2021-08-10 22:29:58,891 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 22:29:59,188 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 275ms. Found 3 JPA repository interfaces.
+2021-08-10 22:30:00,117 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=53774fdc-730b-3cdd-b565-2a4e482440b8
+2021-08-10 22:30:00,605 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'com.example.demo.client.CPFClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 22:30:00,990 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 22:30:01,779 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 22:30:02,060 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2021-08-10 22:30:02,541 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-08-10 22:30:03,113 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-08-10 22:30:03,733 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-08-10 22:30:03,805 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-10 22:30:06,132 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [main] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-10 22:30:06,138 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-10 22:30:06,151 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 22:30:08,503 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-10 22:30:11,351 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [main] No spring.application.name found, defaulting to 'application'
+2021-08-10 22:30:11,365 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2021-08-10 22:30:11,365 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 22:30:11,381 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2021-08-10 22:30:11,382 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 22:30:12,133 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-10 22:30:12,647 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [main] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-10 22:30:12,968 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/challenge'
+2021-08-10 22:30:14,937 INFO com.example.demo.ChallengeApiApplicationTests [main] Started ChallengeApiApplicationTests in 22.243 seconds (JVM running for 26.508)
+2021-08-10 22:30:17,143 INFO com.example.demo.service.VoteVotingService [main] Vote successfully counted.
+2021-08-10 22:30:17,283 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 22:30:17,288 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 22:30:17,323 INFO com.example.demo.service.VoteResultService [main] Voting result calculated successfully.
+2021-08-10 22:30:17,344 INFO com.example.demo.service.AgendaAddService [main] Agenda created successfully.
+2021-08-10 22:30:17,450 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-10 22:30:17,500 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 22:30:17,501 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-10 22:30:18,188 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-08-10 22:30:18,608 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-08-10 22:34:12,309 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 22:34:12,329 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 22:35:07,167 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 22:35:07,185 INFO com.example.demo.service.SessionOpenService [main] Session opened successfully.
+2021-08-10 22:53:02,959 INFO com.example.demo.service.VoteVotingService [main] Vote successfully counted.
+2021-08-10 23:14:08,074 INFO com.example.demo.service.VoteVotingService [main] Vote successfully counted.
+2021-08-10 23:28:12,671 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in C:\Users\larif\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2021-08-10 23:28:12,679 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-10 23:28:13,416 INFO com.example.demo.ChallengeApiApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-10 23:28:15,014 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 23:28:15,161 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 134ms. Found 3 JPA repository interfaces.
+2021-08-10 23:28:15,607 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=5c96c57c-2c11-3df4-a1b3-5bf00eef1793
+2021-08-10 23:28:15,896 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 23:28:16,620 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-10 23:28:16,637 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-10 23:28:16,638 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-10 23:28:16,638 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-08-10 23:28:28,359 INFO org.springframework.boot.devtools.restart.ChangeableUrls [restartedMain] The Class-Path manifest attribute in C:\Users\larif\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/larif/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2021-08-10 23:28:28,363 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-10 23:28:29,120 INFO com.example.demo.ChallengeApiApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-10 23:28:30,472 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-10 23:28:30,627 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 144ms. Found 3 JPA repository interfaces.
+2021-08-10 23:28:31,049 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=5c96c57c-2c11-3df4-a1b3-5bf00eef1793
+2021-08-10 23:28:31,292 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-10 23:28:31,993 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-08-10 23:28:32,008 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-10 23:28:32,008 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-10 23:28:32,009 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2021-08-10 23:28:32,214 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-10 23:28:32,214 INFO org.springframework.web.context.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 3072 ms
+2021-08-10 23:28:32,273 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-08-10 23:28:32,528 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-08-10 23:28:32,538 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/challenge'
+2021-08-10 23:28:32,746 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-10 23:28:32,856 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate Core {5.4.10.Final}
+2021-08-10 23:28:33,045 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-08-10 23:28:33,215 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-08-10 23:28:34,280 INFO org.hibernate.tool.schema.internal.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'file:/C:/Users/larif/Documents/GitHub/challenge-api/target/classes/import.sql'
+2021-08-10 23:28:34,287 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-10 23:28:34,296 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 23:28:34,359 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-10 23:28:35,111 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-10 23:28:35,742 WARN org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration [restartedMain] No spring.application.name found, defaulting to 'application'
+2021-08-10 23:28:35,748 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-10 23:28:35,748 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 23:28:35,756 WARN com.netflix.config.sources.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2021-08-10 23:28:35,756 INFO com.netflix.config.sources.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-08-10 23:28:35,912 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-10 23:28:36,077 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-08-10 23:28:36,885 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-08-10 23:28:36,938 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-10 23:28:37,205 INFO com.example.demo.ChallengeApiApplication [restartedMain] Started ChallengeApiApplication in 9.774 seconds (JVM running for 11.77)
+2021-08-10 23:29:05,484 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-10 23:29:05,484 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-08-10 23:29:05,494 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 9 ms
+2021-08-10 23:29:05,735 INFO com.example.demo.service.AgendaAddService [http-nio-8080-exec-1] Agenda created successfully.
+2021-08-10 23:29:13,053 INFO com.example.demo.service.SessionOpenService [http-nio-8080-exec-3] Session opened successfully.
+2021-08-10 23:29:25,971 INFO com.example.demo.service.VoteVotingService [http-nio-8080-exec-4] Vote successfully counted.
+2021-08-10 23:29:30,089 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-5] Associate's vote already counted.
+2021-08-10 23:29:30,097 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [ChallengeException(message=Associate's vote already counted.)]
+2021-08-10 23:29:34,279 ERROR com.example.demo.config.ChallengeExceptionConfig [http-nio-8080-exec-8] Voting session is still open.
+2021-08-10 23:29:34,281 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [ChallengeException(message=Voting session is still open.)]
+2021-08-10 23:32:43,821 INFO com.example.demo.service.VoteResultService [http-nio-8080-exec-10] Voting result calculated successfully.
+2021-08-10 23:35:08,858 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 42102, SQLState: 42S02
+2021-08-10 23:35:08,859 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] Table "AGENDA" not found; SQL statement:
+insert into agenda (id, description, name) values (null, ?, ?) [42102-199]
+2021-08-10 23:35:08,939 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [insert into agenda (id, description, name) values (null, ?, ?)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement] with root cause
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "AGENDA" not found; SQL statement:
+insert into agenda (id, description, name) values (null, ?, ?) [42102-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7146)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7117)
+	at org.h2.command.Parser.parseInsert(Parser.java:1682)
+	at org.h2.command.Parser.parsePrepared(Parser.java:891)
+	at org.h2.command.Parser.parse(Parser.java:788)
+	at org.h2.command.Parser.parse(Parser.java:760)
+	at org.h2.command.Parser.prepareCommand(Parser.java:683)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.engine.Session.prepareCommand(Session.java:565)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:77)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:1211)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:323)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$2.doPrepare(StatementPreparerImpl.java:109)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:111)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.prepare(GetGeneratedKeysDelegate.java:51)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:40)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3728)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:335)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:292)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:198)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:62)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:108)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:702)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:688)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:368)
+	at com.sun.proxy.$Proxy109.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:314)
+	at com.sun.proxy.$Proxy109.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:554)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy116.save(Unknown Source)
+	at com.example.demo.service.AgendaAddService.execute(AgendaAddService.java:22)
+	at com.example.demo.controller.AgendaController.add(AgendaController.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-08-10 23:36:47,118 INFO com.example.demo.service.AgendaAddService [http-nio-8080-exec-9] Agenda created successfully.
+2021-08-10 23:37:02,880 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(18)-127.0.0.1] Application shutdown requested.
+2021-08-10 23:37:02,884 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(18)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-10 23:37:02,900 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(18)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-10 23:37:02,901 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [RMI TCP Connection(18)-127.0.0.1] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-08-10 23:37:02,914 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(18)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-08-10 23:37:02,918 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(18)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-08-10 23:37:02,919 INFO org.apache.coyote.http11.Http11NioProtocol [RMI TCP Connection(18)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8080"]
+2021-08-10 23:37:02,941 INFO org.apache.catalina.core.StandardService [RMI TCP Connection(18)-127.0.0.1] Stopping service [Tomcat]
+2021-08-10 23:37:03,225 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(18)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-08-10 23:37:03,237 INFO org.apache.coyote.http11.Http11NioProtocol [RMI TCP Connection(18)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2021-08-10 23:37:03,250 INFO org.apache.coyote.http11.Http11NioProtocol [RMI TCP Connection(18)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8080"]
