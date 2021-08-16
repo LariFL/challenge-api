@@ -15,6 +15,8 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import com.example.demo.client.CPFClient;
+import com.example.demo.enums.AssociateStatusEnum;
+import com.example.demo.enums.VoteAnswerEnum;
 import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Agenda;
 import com.example.demo.model.Session;
@@ -23,8 +25,6 @@ import com.example.demo.repository.SessionRepository;
 import com.example.demo.repository.VoteRepository;
 import com.example.demo.request.VoteRequest;
 import com.example.demo.response.CPFResponse;
-import com.example.demo.util.AssociateStatusEnum;
-import com.example.demo.util.VoteAnswerEnum;
 
 @RunWith(MockitoJUnitRunner.class)
 public class VoteVotingServiceTest {

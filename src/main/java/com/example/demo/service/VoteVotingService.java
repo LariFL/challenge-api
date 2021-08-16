@@ -6,14 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.client.CPFClient;
+import com.example.demo.enums.AssociateStatusEnum;
+import com.example.demo.enums.VoteAnswerEnum;
 import com.example.demo.exception.ChallengeException;
 import com.example.demo.model.Session;
 import com.example.demo.model.Vote;
 import com.example.demo.repository.SessionRepository;
 import com.example.demo.repository.VoteRepository;
 import com.example.demo.request.VoteRequest;
-import com.example.demo.util.AssociateStatusEnum;
-import com.example.demo.util.VoteAnswerEnum;
 
 import feign.FeignException;
 import lombok.extern.slf4j.Slf4j;
